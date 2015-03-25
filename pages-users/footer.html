@@ -1,0 +1,80 @@
+
+                <div class="login-footer">
+                    <div class="text-center">
+                        &copy; 
+                        <script type="text/javascript">
+                            var currentYr = new Date();
+                            var insertYr = currentYr.getFullYear();
+                            document.write(insertYr);
+                        </script>
+                        Biz Directory - All Rights Reserved.
+                    </div>
+                    <!-- <div class="pull-right">
+                        <a href="#">About</a> |
+                        <a href="#">Privacy</a> |
+                        <a href="#">Contact Us</a>
+                        </div> -->
+                </div>
+            </div>
+            
+        </div>
+        
+       <!-- START SCRIPTS -->
+        <!-- START PLUGINS -->
+        <script type="text/javascript" src="../js/plugins/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/plugins/bootstrap/bootstrap.min.js"></script>
+        <!-- END PLUGINS -->
+        
+        <!-- THIS PAGE PLUGINS -->
+        <script type='text/javascript' src='../js/plugins/icheck/icheck.min.js'></script>
+        <script type="text/javascript" src="../js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+        
+        <script type='text/javascript' src='../js/plugins/bootstrap/bootstrap-datepicker.js'></script>        
+        <script type='text/javascript' src='../js/plugins/bootstrap/bootstrap-select.js'></script>        
+        
+        <script type='text/javascript' src='../js/plugins/validationengine/languages/jquery.validationEngine-en.js'></script>
+        <script type='text/javascript' src='../js/plugins/validationengine/jquery.validationEngine.js'></script>        
+
+        <script type='text/javascript' src='../js/plugins/jquery-validation/jquery.validate.js'></script>                
+        <!-- END THIS PAGE PLUGINS -->  
+        
+        <!-- START TEMPLATE -->
+        
+        <script type="text/javascript" src="../js/plugins.js"></script>
+        <script type="text/javascript" src="../js/actions.js"></script>
+        <!-- END TEMPLATE -->
+        
+        <script type="text/javascript">
+            var jvalidate = $("#jvalidate").validate({
+                ignore: [],
+                rules: {                                            
+                        login: {
+                                required: true,
+                                minlength: 3
+                        },
+                        password: {
+                                required: true,
+                                minlength: 6,
+                                maxlength: 10
+                        },
+                        're-password': {
+                                required: true,
+                                minlength: 6,
+                                maxlength: 10,
+                                equalTo: "#password2"
+                        }
+                    }                                        
+                });                                    
+
+	        </script>
+	        
+	    <!-- END SCRIPTS -->    
+    </body>
+</html>
+
+
+
+
+
+
